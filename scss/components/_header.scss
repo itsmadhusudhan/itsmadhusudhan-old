@@ -1,4 +1,3 @@
-
 .wrapper {
   overflow: hidden;
 }
@@ -30,7 +29,7 @@ header {
 }
 
 .brand a {
-  color: #B9333D;
+  color: #b9333d;
 }
 
 .menu {
@@ -44,7 +43,7 @@ header {
 }
 
 .menu__link {
-  color: #B9333D;
+  color: #b9333d;
   font-size: 18px;
 }
 
@@ -53,15 +52,15 @@ header {
   // background: #e0ebe8;
   position: relative;
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  padding-top:30px;
+  padding-top: 30px;
   padding-bottom: 180px;
 }
 
-.hero__img--wrapper{
-  flex:1 0 50%;
-  position:relative;
+.hero__img--wrapper {
+  flex: 1 0 50%;
+  position: relative;
 }
 
 .hero__img {
@@ -73,176 +72,104 @@ header {
 
 .intro {
   padding-top: 50px;
-  color: #B9333D;
-  flex:1 0 50%;
+  color: #b9333d;
+  flex: 1 0 50%;
 }
 
-.intro h1{
-  font-size: 38px;  
+.intro h1 {
+  font-size: 38px;
 }
 
-.intro h3{
-  font-size: 38px;  
+.intro h3 {
+  font-size: 38px;
 }
 
-.slogan{
+.intro h3::selection{
+  background:#ECA042;
+  
+}
+
+.slogan {
   padding: 20px 20px 20px 0;
   font-size: 20px;
   color: #444;
   letter-spacing: 1px;
 }
 
-.slogan p{
-  padding-bottom: 30px;
+.slogan p {
+  padding:0 0 30px 0;
 }
 
-.btn{
+.slogan p::selection{
+  background:#ECA042;
+  
+}
+
+.spacer--left{
+  margin-left: 30px;
+  user-select: none;
+}
+
+.btn {
   display: inline-block;
-  padding:8px 12px;
-  border: 1px solid #005DAA;
+  padding: 6px 14px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  font-size:17px;
-  box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.2);
+  font-size: 17px;
+  box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
   outline: none;
+  user-select: none;
 }
 
-.btn:hover{
-  box-shadow: 2px -1px 3px 0 rgba(0,0,0,0.4); 
-  color:#005DAA;
+.btn:hover {
+  box-shadow: 2px -1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn--blue {
+  color: #005daa;
   background: #fff;
+  border: 1px solid #005daa;  
 }
 
-.btn--blue{
-  background:#005DAA;
+.btn--blue:hover {
+  background: #005daa;
+  color: #fff;
+}
+
+.btn--red{
+  color:rgba(185, 51, 61,0.9);
+  border:1px solid rgba(185, 51, 61,0.9);
+}
+
+.btn--red:hover{
+  background:  rgba(185, 51, 61,0.9);
   color:#fff;
+  
 }
 
-@media screen and (max-width:972px){
-  .hero__img{
+@media screen and (max-width: 972px) {
+  .hero__img {
     left: -10%;
   }
 }
 
-@media screen and (max-width:750px){
-  .hero{
+@media screen and (max-width: 750px) {
+  .hero {
     flex-direction: column;
     align-items: center;
     padding-bottom: 120px;
   }
-  .hero__img{
+  .hero__img {
     position: relative;
-    left:0%;
+    left: 0%;
   }
 
-  .intro{
+  .intro {
     text-align: center;
   }
 
-  .slogan{
-    padding:10px;
+  .slogan {
+    padding: 10px;
   }
 }
-
-// hello section
-
-#hello {
-  position: relative;
-  display: flex;
-  flex-direction: column;  
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 100px;
-}
-
-.board__wrapper{
-  position: relative;
-}
-
-.board {
-  width: 300px;
-  height: 300px;
-}
-
-.hello__text {
-  text-align: center;
-  font-size: 22px;
-  max-width: 500px;
-  padding: 10px;
-}
-
-.text {
-  font-size: 20px;
-}
-
-@media screen and (max-width:750px){
- .hello{
-   left: 35%;
- }
-}
-/* skills section */
-
-#my-skills {
-  font-family: Acme;
-  max-width: 80%;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-#my-skills h2{
-  font-size: 3.5em;
-  color:  rgba(185, 51, 61,0.9); 
-}
-
-.idea__wrapper{
-  position: absolute;
-  left: -10%;
-}
-
-.skill__title {
-  color: rgba(185, 51, 61,0.9);
-  font-size: 2em;
-  padding: 1em 0 0.4em; 
-  
-}
-
-#my-skills p{
-  font-size: 1.1em;
-  line-height: 1.3;
-  color: #333;  
-  padding: 0 0 1.5em;
-  
-}
-
-#my-skills h3::selection{
-  background:#ECA042;
-}
-
-
-#my-skills p::selection{
-  background:#ECA042;
-}
-
-@media screen and (max-width:600px){
-  .skills{
-    padding-top:400px;
-  }
-  // .idea__wrapper{
-  //   // left: 0;
-  // }
-}
-
-// @media screen and (max-width:420px){
-//   .idea{
-
-//   }
-// }
-
-// hire me
-#hire-me{
-  height: 500px;
-}
-
