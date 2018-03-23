@@ -84,9 +84,8 @@ header {
   font-size: 38px;
 }
 
-.intro h3::selection{
-  background:#ECA042;
-  
+.intro h3::selection {
+  background: #eca042;
 }
 
 .slogan {
@@ -97,15 +96,14 @@ header {
 }
 
 .slogan p {
-  padding:0 0 30px 0;
+  padding: 0 0 30px 0;
 }
 
-.slogan p::selection{
-  background:#ECA042;
-  
+.slogan p::selection {
+  background: #eca042;
 }
 
-.spacer--left{
+.spacer--left {
   margin-left: 30px;
   user-select: none;
 }
@@ -120,6 +118,7 @@ header {
   box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.2);
   outline: none;
   user-select: none;
+  background:#fff;
 }
 
 .btn:hover {
@@ -129,7 +128,7 @@ header {
 .btn--blue {
   color: #005daa;
   background: #fff;
-  border: 1px solid #005daa;  
+  border: 1px solid #005daa;
 }
 
 .btn--blue:hover {
@@ -137,15 +136,14 @@ header {
   color: #fff;
 }
 
-.btn--red{
-  color:rgba(185, 51, 61,0.9);
-  border:1px solid rgba(185, 51, 61,0.9);
+.btn--red {
+  color: rgba(185, 51, 61, 0.9);
+  border: 1px solid rgba(185, 51, 61, 0.9);
 }
 
-.btn--red:hover{
-  background:  rgba(185, 51, 61,0.9);
-  color:#fff;
-  
+.btn--red:hover {
+  background: rgba(185, 51, 61, 0.9);
+  color: #fff;
 }
 
 @media screen and (max-width: 972px) {
@@ -172,4 +170,83 @@ header {
   .slogan {
     padding: 10px;
   }
+}
+
+.header {
+  // position: fixed;
+  // top:0;
+  // transition: 0.2s ease;
+  // background:#fff;
+  z-index: 200;
+}
+
+.header--unpin {
+  // position: fixed;
+  // top:0;
+  top: -200px;
+  z-index: 200;
+  // transition: 0.2s ease;
+}
+
+//case studies styling
+.casestudy__hero {
+  height: 200px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  padding-bottom: 400px;
+}
+
+.project {
+  padding: 50px 0;
+  color: #fff;
+  background: rgba(70, 70, 133,0.9);
+}
+
+.project__img--wrapper {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px 0;
+  & img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+}
+
+.project__info {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  letter-spacing: 1px;
+  & h2 {
+    font-size: 32px;
+  }
+
+  & h3 {
+    font-size: 20px;
+  }
+
+  & p {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+
+.btn--yellow{
+  color: #F79F1F;
+  background: #fff;
+  border: 1px solid #F79F1F;
+}
+
+.btn--yellow:hover{
+  background: #F79F1F;
+  color:#fff;
 }
