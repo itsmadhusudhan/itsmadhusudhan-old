@@ -16,7 +16,7 @@ const Hero = () => {
             way to the top, No matter what other say or what others think until
             and unless I decide I'm done, I don't quit working.
           </p>
-          <a href="./casestudies.html" className="btn btn--blue">
+          <a href="/" className="btn btn--blue">
             Case Studies
           </a>
           <a href="/" className="btn btn--red spacer--left">
