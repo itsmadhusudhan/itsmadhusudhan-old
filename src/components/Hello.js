@@ -1,5 +1,5 @@
 import React from 'react';
-import board from "../images/board.png";
+import board from "../images/hello.png";
 
 const Hello=(props)=>{
     return(

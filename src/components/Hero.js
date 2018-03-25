@@ -1,4 +1,5 @@
 import React from "react";
+import SocialLink from "./SocialLink";
 import hero from "../images/hero.png";
 
 const Hero = () => {
@@ -12,16 +13,31 @@ const Hero = () => {
         <h3>a Front-End Web Developer</h3>
         <div className="slogan">
           <p>
-            I always find hope even in the worst situation. I will hustle all my
-            way to the top, No matter what other say or what others think until
-            and unless I decide I'm done, I don't quit working.
+            I will hustle all my way to the top, No matter what other say or
+            what others think until and unless I decide I'm done, I don't quit
+            working.
           </p>
-          <a href="/" className="btn btn--blue">
-            Case Studies
-          </a>
-          <a href="/" className="btn btn--red spacer--left">
-            Style Guide
-          </a>
+
+          <SocialLink
+            url="https://github.com/itsmadhusudhan"
+            icon="icon icon--github"
+            fa="fa fa-github fa-lg"
+          />
+          <SocialLink
+            url="https://twitter.com/itsmadhusudhan"
+            icon="icon icon--twitter"
+            fa="fa fa-twitter fa-lg"
+          />
+          <SocialLink
+            url="https://medium.com/itsmadhusudhan"
+            icon="icon icon--medium"
+            fa="fa fa-medium fa-lg"
+          />
+          <SocialLink
+            url="https://linkedin.com/in/itsmadhusudhan"
+            icon="icon icon--linkedin"
+            fa="fa fa-linkedin fa-lg"
+          />
         </div>
       </div>
     </div>

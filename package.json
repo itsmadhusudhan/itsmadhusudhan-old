@@ -11,6 +11,8 @@
   "author": "Madhusudhan R",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/react-fontawesome": "^0.0.18",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },

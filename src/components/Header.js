@@ -8,17 +8,17 @@ const Header = props => {
         <ul className="menu">
           <li className="menu__item">
             <a href="/" className="menu__link">
-              About
+              Home
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="" className="menu__link">
+              Casestudies
             </a>
           </li>
           <li className="menu__item">
             <a href="" className="menu__link">
               Works
-            </a>
-          </li>
-          <li className="menu__item">
-            <a href="" className="menu__link">
-              Contact
             </a>
           </li>
         </ul>

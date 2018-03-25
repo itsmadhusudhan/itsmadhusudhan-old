@@ -1,5 +1,5 @@
 import React from "react";
-import shout from "../images/confused.png";
+import shout from "../images/about.png";
 
 const Hireme=(props)=>{
     return(
