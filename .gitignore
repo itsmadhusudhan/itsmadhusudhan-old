@@ -82,7 +82,6 @@ $RECYCLE.BIN/
 .sass-cache
 
 #node
-package.json
 
 
 # Files that might appear in the root of a volume
