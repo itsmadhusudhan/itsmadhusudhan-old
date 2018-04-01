@@ -1,6 +1,6 @@
 import React from "react";
 import SocialLink from "./SocialLink";
-import hero from "../images/hero.png";
+import hero from "../images/hero.webp";
 
 const Hero = () => {
   return (

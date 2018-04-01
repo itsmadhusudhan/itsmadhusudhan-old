@@ -94,3 +94,7 @@ $RECYCLE.BIN/
 .com.apple.timemachine.donotpresent
 
 plainhtml
+
+#images
+src/images/*.png
+images/*.jpeg

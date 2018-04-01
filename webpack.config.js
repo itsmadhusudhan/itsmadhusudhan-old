@@ -18,7 +18,7 @@ module.exports = {
         test: /.scss$/
       },
       {
-        test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+        test: /\.(pdf|jpg|png|gif|svg|ico|webp)$/,
         use: [
             {
                 loader: 'url-loader'

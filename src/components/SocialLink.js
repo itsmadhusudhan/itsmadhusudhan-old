@@ -4,10 +4,10 @@ const SocialLink = props => {
   return (
     <a
       href={props.url}
-      class={props.icon}
+      className={props.icon}
       target="_blank"
     >
-      <i class={props.fa} />
+      <i className={props.fa} />
     </a>
   );
 };
