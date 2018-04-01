@@ -96,5 +96,4 @@ $RECYCLE.BIN/
 plainhtml
 
 #images
-src/images/*.png
 images/*.jpeg

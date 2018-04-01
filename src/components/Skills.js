@@ -1,6 +1,7 @@
 import React from "react";
 import Skill from "./Skill";
-import idea from "../images/idea.png";
+import idea from "../images/idea.webp";
+import ideapng from "../images/idea.png";
 
 const Skills = props => {
   const skilldata = [
@@ -43,7 +44,10 @@ const Skills = props => {
       <h2 className="heading">I'm Good at</h2>
       <div className="skills__wrapper">
       <div className="idea__wrapper">
-        <img src={idea} alt="idea" className="idea__img" />
+        <picture>
+          <source srcSet={idea} type="image/webp" />
+          <img src={ideapng} alt="skills" className="idea__img" />
+        </picture>
       </div>
 
       <div className="skills">

@@ -1,12 +1,16 @@
 import React from "react";
 import SocialLink from "./SocialLink";
 import hero from "../images/hero.webp";
+import heropng from "../images/hero.png";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero__img--wrapper">
-        <img className="hero__img" src={hero} alt="hero" />
+        <picture>
+        <source srcSet={hero} type="image/webp" />
+        <img className="hero__img" src={heropng} alt="hero" />
+      </picture>
       </div>
       <div className="intro">
         <h1>I'm Madhusudhan</h1>

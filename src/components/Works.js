@@ -1,12 +1,16 @@
 import React from 'react';
-import search from "../images/styleguide.png"
+import search from "../images/styleguide.webp"
+import searchpng from "../images/styleguide.png"
 
 const Works=(props)=>{
   return(
     <section id="works">
     <h2 className="heading">Works</h2>
     <div className="works__wrapper">
-      <img src={search} alt="hire me" className="works__img" />
+      <picture>
+      <source srcSet={search} type="image/webp" />
+      <img src={searchpng} alt="works" className="works__img" />
+    </picture>
     </div>
     <div className="works">
       <div className="work">
