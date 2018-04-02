@@ -1,10 +1,10 @@
 import React from 'react';
+import Casestudy from './Casestudy';
 
 const Casestudies =(props)=>{
   return(
     <div>
-      casestudies page here
-    
+      <Casestudy/>    
     </div>
   )
 }

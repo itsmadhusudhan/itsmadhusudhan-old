@@ -31,6 +31,9 @@ header {
 .brand a {
   color: #b9333d;
   font-size: 36px;
+  &::selection{
+    background: #ECA042;
+  }
 }
 
 .menu {
@@ -46,6 +49,10 @@ header {
 .menu__link {
   color: #b9333d;
   font-size: 18px;
+}
+
+.menu__link::selection{
+  background: #ECA042;
 }
 
 @media screen and (max-width:600px){

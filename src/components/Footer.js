@@ -8,7 +8,7 @@ const Footer = props => {
         <a
           href="https://www.freepik.com/free-vector/worker-with-doubts_834551.htm"
           className="link"
-        >
+        target="_blank">
           Images by Freepik
         </a>
       </p>

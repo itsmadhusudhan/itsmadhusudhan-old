@@ -29,7 +29,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li className="menu__item">
-            <a href="#works" className="menu__link">
+            <a href="#" className="menu__link">
               Works
             </a>
           </li>
