@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Layout from "./components/Layout";
+import AppRouter from './routers/AppRouter';
 
 function run() {
-  ReactDOM.render(<Layout />, document.getElementById("root"));
+  ReactDOM.render(<AppRouter />, document.getElementById("root"));
 }
 
 if (window.addEventListener) {
