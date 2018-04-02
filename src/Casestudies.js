@@ -1,5 +1,5 @@
 import React from 'react';
-import CaseStudy from './components/CaseStudy';
+import CaseStudy from './CaseStudy';
 
 class Casestudies extends React.Component{
     render(){
