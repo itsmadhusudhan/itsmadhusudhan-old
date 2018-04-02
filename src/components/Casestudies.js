@@ -1,10 +1,10 @@
 import React from 'react';
-import Casestudy from './Casestudy';
+import Casestudy from './CaseStudy';
 
 const Casestudies =(props)=>{
   return(
     <div>
-      <Casestudy/>    
+      <CaseStudy/>    
     </div>
   )
 }
