@@ -1,5 +1,5 @@
 import React from 'react';
-import Casestudy from './CaseStudy';
+import CaseStudy from './CaseStudy';
 
 const Casestudies =(props)=>{
   return(
