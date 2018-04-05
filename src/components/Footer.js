@@ -6,7 +6,7 @@ const Footer = props => {
       <p>
         Crafted by Madhusudhan &amp;
         <a
-          href="https://www.freepik.com/free-vector/worker-with-doubts_834551.htm"
+          href="http://www.freepik.com/alekksall"
           className="link"
         target="_blank">
           Images by Freepik

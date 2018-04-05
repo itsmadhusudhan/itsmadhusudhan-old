@@ -12,7 +12,6 @@ const Layout=(props)=>{
             <Hero/>
             <Hello/>
             <Skills/>
-            <Works/>
             <Hireme/>
         </div>
     )

@@ -20,6 +20,17 @@
   left: 20%;
   user-select: none;
   display: block;
+  animation: slidein 2s ease;
+}
+
+@keyframes slidein{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+    transition: 2s ease;
+  }
 }
 
 .intro {
@@ -66,13 +77,17 @@
   padding: 10px;
   border-radius: 50%;
   font-size: 20px;
+  transition:1s ease;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.2);  
   &--github {
     color: #24292e;
     background: #24292e;
     color: #fff;
   }
   &:hover{
-    animation: iconrotate 0.5s;
+    // animation: iconrotate 0.5s;
+    transform:scale(1.1);
+    transition:1s ease;
   }
   
 

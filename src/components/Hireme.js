@@ -19,7 +19,7 @@ const Hireme = props => {
         I got skills. If you are impressed, message me for an interview.
       </p>
       <div className="btn__wrapper">
-        <a href="/" className="btn btn--green">
+        <a href="mailto:madhusudhan1863@gmail.com" className="btn btn--green">
           Message Me
         </a>
       </div>

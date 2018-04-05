@@ -24,13 +24,14 @@ const Header = () => {
               to="/casestudies"
               activeClassName="is-active"
               className="menu__link"
+              exact={true}
             >
               Casestudies
             </NavLink>
           </li>
           <li className="menu__item">
-            <a href="#" className="menu__link">
-              Works
+            <a href="https://medium.com/@itsmadhusudhan" className="menu__link" target="_blank">
+              Blog
             </a>
           </li>
         </ul>

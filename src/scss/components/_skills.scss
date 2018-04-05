@@ -3,7 +3,7 @@
 
 #my-skills {
   font-family: Acme;
-  max-width: 80%;
+  max-width: 50%;
   margin: auto;
   text-align: center;
   position: relative;
@@ -50,6 +50,12 @@
 
 #my-skills p::selection{
   background:#ECA042;
+}
+
+@media screen and (max-width:900px){
+  #my-skills{
+    max-width:80%;
+  }
 }
 
 @media screen and (max-width:450px){
