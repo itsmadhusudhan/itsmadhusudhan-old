@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink,hashHistory } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
@@ -9,7 +9,7 @@ import NotFound from "../components/NotFound";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter history={ hashHistory }>
       <div>
         <Header />
         <Switch>
