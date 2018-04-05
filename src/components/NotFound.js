@@ -12,8 +12,11 @@ const NotFound = props => {
           <img src={confusedpng} alt="notfound" className="confused__img" />
         </picture>
         <h3>
-          Didn't find what your are looking for? {"   "}
-          <NavLink to="/" className="menu__link">Go Back Home</NavLink>
+          <p>My portfolio site case study page is under contruction</p>
+          {"   "}
+          <NavLink to="/" className="menu__link">
+            Go Back Home
+          </NavLink>
         </h3>
       </div>
     </section>

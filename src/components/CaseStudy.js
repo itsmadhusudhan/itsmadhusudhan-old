@@ -30,7 +30,7 @@ const CaseStudy = props => {
               I have both designed and developed my own portfolio site which you
               are looking at now. It was quite a challenging task to design. You
               can read the casestudy to know more on my decisions for design and
-              development of this project.
+              development of this project. 
             </p>
             <Link to="/casestudies/portfolio-site" className="btn btn--yellow">
               View details

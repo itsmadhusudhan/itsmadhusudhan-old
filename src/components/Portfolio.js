@@ -1,9 +1,10 @@
 import React from "react";
+import NotFound from "./NotFound";
 
 const Portfolio = props => {
   return (
     <div>
-      <p>My portfolio site case study page coming soon</p>
+    <NotFound/>
     </div>
   );
 };
