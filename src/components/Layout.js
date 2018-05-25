@@ -6,15 +6,16 @@ import Works from "./Works";
 import Hireme from "./Hireme";
 import "../scss/style.scss";
 
-const Layout=(props)=>{
-    return(
-        <div className="wrapper">
-            <Hero/>
-            <Hello/>
-            <Skills/>
-            <Hireme/>
-        </div>
-    )
-}
+const Layout = props => {
+  return (
+    <div className="wrapper">
+      <Hero />
+      <Hello />
+      <Skills />
+      <Works />
+      <Hireme />
+    </div>
+  );
+};
 
 export default Layout;
