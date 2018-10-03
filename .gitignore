@@ -97,3 +97,7 @@ plainhtml/
 
 #images
 images/*.jpeg
+
+.cache
+
+public

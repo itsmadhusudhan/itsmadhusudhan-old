@@ -1,21 +1,50 @@
 import React from "react";
-import Hero from "./Hero";
-import Hello from "./Hello";
-import Skills from "./Skills";
-import Works from "./Works";
-import Hireme from "./Hireme";
-import "../scss/style.scss";
+// import styled from "styled-components";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import Head from "./Head";
+import Header from "./Header";
+import { navLinks } from "../../config";
 
-const Layout = props => {
-  return (
-    <div className="wrapper">
-      <Hero />
-      <Hello />
-      <Skills />
-      <Works />
-      <Hireme />
-    </div>
-  );
-};
+class Layout extends React.Component {
+  static propTypes = {
+    children: PropTypes.node.isRequired
+  };
+
+  state = {
+    isLoading: true
+  };
+
+  render() {
+    const { children } = this.props;
+    const { isLoading } = this.state;
+    return (
+      <StaticQuery
+        query={graphql`
+          query LayoutQuery {
+            site {
+              siteMetadata {
+                title
+                siteUrl
+                description
+              }
+            }
+          }
+        `}
+        render={data => (
+          <div>
+            <Head metaData={data.site.siteMetadata} />
+            {isLoading && (
+              <div>
+                <Header navLinks={navLinks} />
+                {children}
+              </div>
+            )}
+          </div>
+        )}
+      />
+    );
+  }
+}
 
 export default Layout;
