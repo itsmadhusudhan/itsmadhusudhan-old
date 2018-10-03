@@ -66,9 +66,9 @@ const NavBarLink = styled(Link)`
   font-size: ${theme.fontSizes.large};
 `;
 
-const Menu = ({ menuOpen, navLinks }) => {
+const Menu = ({ menuOpen, navLinks,handleClick }) => {
   return (
-    <MenuContainer menuOpen={menuOpen}>
+    <MenuContainer menuOpen={menuOpen} onClick={handleClick}>
       <SideMenuBar>
         <NavbarLinks>
           <NavBarList>

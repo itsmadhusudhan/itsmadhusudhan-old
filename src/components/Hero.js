@@ -9,7 +9,6 @@ const HeroContainer = styled.div`
   flex-direction: column;
   min-height: 80vh;
   padding: 50px 0 100px 0;
-  font-family: Cabin;
 `;
 
 const Hello = styled.p`
@@ -44,6 +43,9 @@ const Introduction = styled.p`
   font-size: ${theme.fontSizes.large};
   max-width: 500px;
   line-height: 25px;
+  @media screen and (max-width: ${theme.screenSizes.tablet}px) {
+    font-size: 18px;
+  }
 `;
 
 const WebLink = styled.a`

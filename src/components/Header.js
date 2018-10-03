@@ -137,10 +137,15 @@ class Header extends React.Component {
     }
   };
 
+  handleClick=(e)=>{
+    if(e.target.href){
+      this.toggleMenu();
+    }
+  }
+
   render() {
     const { navLinks } = this.props;
     const { menuOpen } = this.state;
-    console.log(menuOpen);
     return (
       <HeaderContainer>
         <NavBar>
@@ -165,7 +170,7 @@ class Header extends React.Component {
             </NavBarList>
           </NavbarLinks>
         </NavBar>
-        <Menu menuOpen={menuOpen} navLinks={navLinks} />
+        <Menu menuOpen={menuOpen} navLinks={navLinks} handleClick={this.handleClick}/>
       </HeaderContainer>
     );
   }

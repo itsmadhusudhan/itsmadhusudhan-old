@@ -1,13 +1,14 @@
 import React from "react";
+// import { Link } from "gatsby";
 // import PropTypes from "prop-types";
 import styled from "styled-components";
 import { theme } from "../styles";
 
-const ExperienceContainer = styled.div`
+const ProjectContainer = styled.div`
   display: flex;
-  flex-direction:column;
-  padding-right:150px;
-  padding-bottom:100px;
+  flex-direction: column;
+  padding-right: 150px;
+  padding-bottom: 100px;
 `;
 
 const Heading = styled.h3`
@@ -17,9 +18,8 @@ const Heading = styled.h3`
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content:flex-end;
+  // justify-content:center;
   padding-left: 20px;
-  text-align:right;
   &:after,
   &:before {
     content: "";
@@ -36,7 +36,7 @@ const Heading = styled.h3`
   }
   &:after {
     margin-left: 20px;
-    width: 400px;
+    width: 300px;
     @media screen and (max-width: ${theme.screenSizes.tablet}px) {
       width: 100px;
       margin-left: 10px;
@@ -47,29 +47,14 @@ const Heading = styled.h3`
   }
 `;
 
-const Content=styled.div`
-  display:flex;
-  justify-content:space-around;
-  `;
-
-const Introduction = styled.p`
-  margin-top: 25px;
-  font-size: ${theme.fontSizes.large};
-  max-width: 500px;
-  line-height: 25px;
-`;
-
-class Experience extends React.Component {
+class Projects extends React.Component {
   render() {
     return (
-      <ExperienceContainer id="experience">
-      <Heading>Experience</Heading>
-        <Content> 
-        <Introduction></Introduction>
-        </Content>
-      </ExperienceContainer>
+      <ProjectContainer id="projects">
+        <Heading>Projects</Heading>
+      </ProjectContainer>
     );
   }
 }
 
-export default Experience;
+export default Projects;

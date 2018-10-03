@@ -6,6 +6,8 @@ import styled, { injectGlobal } from "styled-components";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 import { theme } from "../styles";
 
 injectGlobal`
@@ -18,7 +20,7 @@ injectGlobal`
   body{
     margin:0;
     padding:0;
-    font-family:"Segoe UI";
+    font-family: Cabin,"Segoe UI";
   }
   a,h1,h2,h3,p,li,ul{
     margin:0;
@@ -31,7 +33,7 @@ const MainContainer = styled.div`
   padding: 30px 0 0 150px;
   @media screen and (max-width: ${theme.screenSizes.desktop}px) {
     padding: 30px 0 0 80px;
-    }
+  }
   @media screen and (max-width: ${theme.screenSizes.tablet}px) {
     padding: 50px;
   }
@@ -46,7 +48,9 @@ const IndexPage = () => {
       <MainContainer>
         <Hero />
         <About />
-        <Experience/>
+        <Experience />
+        <Projects />
+        <Contact/>
       </MainContainer>
     </Layout>
   );
