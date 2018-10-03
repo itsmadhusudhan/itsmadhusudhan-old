@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { grapgql } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import styled, { injectGlobal } from "styled-components";
 import Hero from "../components/Hero";
 import About from "../components/About";
