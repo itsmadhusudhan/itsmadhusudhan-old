@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles";
 import madhu from '../images/madhu.jpg';
-import { spawn } from "child_process";
 
 const AboutContainer = styled.div`
   display: flex;
