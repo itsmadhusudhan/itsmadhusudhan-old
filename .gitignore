@@ -101,3 +101,5 @@ images/*.jpeg
 .cache
 
 public
+
+package-lock.json

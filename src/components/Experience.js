@@ -5,9 +5,9 @@ import { theme } from "../styles";
 
 const ExperienceContainer = styled.div`
   display: flex;
-  flex-direction:column;
-  padding-right:150px;
-  padding-bottom:100px;
+  flex-direction: column;
+  // padding-right: 150px;
+  padding-bottom: 100px;
 `;
 
 const Heading = styled.h3`
@@ -17,9 +17,9 @@ const Heading = styled.h3`
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content:flex-end;
+  justify-content: flex-end;
   padding-left: 20px;
-  text-align:right;
+  text-align: right;
   &:after,
   &:before {
     content: "";
@@ -36,7 +36,7 @@ const Heading = styled.h3`
   }
   &:after {
     margin-left: 20px;
-    width: 400px;
+    width: 300px;
     @media screen and (max-width: ${theme.screenSizes.tablet}px) {
       width: 100px;
       margin-left: 10px;
@@ -47,13 +47,39 @@ const Heading = styled.h3`
   }
 `;
 
-const Content=styled.div`
-  display:flex;
-  justify-content:space-around;
-  `;
+const Details = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
+  padding:30px;
+  @media screen and (max-width: ${theme.screenSizes.desktop}px) {
+    flex-direction:column;
+  justify-content: space-around;
+  }
+`;
+
+const Designation = styled.h2`
+  color: ${theme.colors.navy};
+`;
+
+const Company = styled.h3`
+  color: ${theme.colors.grey};
+  margin-top: 10px;
+`;
+
+const Period = styled.p`
+  color: ${theme.colors.darkNavy};
+  margin-top: 10px;
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+`;
 
 const Introduction = styled.p`
-  margin-top: 25px;
+  margin-top: 10px;
   font-size: ${theme.fontSizes.large};
   max-width: 500px;
   line-height: 25px;
@@ -63,10 +89,15 @@ class Experience extends React.Component {
   render() {
     return (
       <ExperienceContainer id="experience">
-      <Heading>Experience</Heading>
-        <Content> 
-        <Introduction></Introduction>
-        </Content>
+        <Heading>💼 Work Experience </Heading>
+        <Details>
+          <Content>
+            <Designation>Software Engineer</Designation>
+            <Company>AtoS Global IT Solutions</Company>
+            <Period>July, 2017- Present</Period>
+          </Content>
+          <Introduction>Currently working as a fulltime Software Engineer at AtoS, Pune from past One year. </Introduction>
+        </Details>
       </ExperienceContainer>
     );
   }

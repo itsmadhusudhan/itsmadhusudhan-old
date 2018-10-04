@@ -47,11 +47,36 @@ const Heading = styled.h3`
     }
   }
 `;
+
+const Chat=styled.p`
+
+`
+
+const MailLink=styled.a`
+background: ${theme.colors.navy};
+color: ${theme.colors.white};
+text-decoration: none;
+margin-top: 30px;
+width: 120px;
+padding: 10px;
+cursor: pointer;
+box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+text-align: center;
+&:hover {
+  background: ${theme.colors.white};
+  color: ${theme.colors.navy};
+  border: 1px solid ${theme.colors.navy};
+}
+`;
+
+
 class Contact extends React.Component {
   render() {
     return (
       <ProjectContainer id="contact">
-        <Heading>Contact</Heading>
+        <Heading>📡 Contact</Heading>
+        <Chat>If you have any queries or job offers you can reach out to me on below email id	📧.</Chat>
+        <MailLink href="mailto:madhusudhan1863@gmail.com">Mail Me</MailLink>
       </ProjectContainer>
     );
   }

@@ -51,7 +51,7 @@ class Projects extends React.Component {
   render() {
     return (
       <ProjectContainer id="projects">
-        <Heading>Projects</Heading>
+        <Heading>💻 Projects</Heading>
       </ProjectContainer>
     );
   }

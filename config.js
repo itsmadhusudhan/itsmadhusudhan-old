@@ -5,19 +5,19 @@ module.exports={
   description:'Personal portfolio site',
   navLinks:[
     {
-      name:'About',
+      name:'👲 About',
       url:'#about'
     },
     {
-      name:'Experience',
+      name:'💼 Experience',
       url:'#experience'
     },
     {
-      name:'Projects',
+      name:'💻 Projects',
       url:'#projects'
     },
     {
-      name:'Contact',
+      name:'📡 Contact',
       url:'#contact'
     }
   ]

@@ -30,15 +30,15 @@ injectGlobal`
 const MainContainer = styled.div`
   display: block;
   width: 100%;
-  padding: 30px 0 0 150px;
+  padding: 30px 150px 0 150px;
   @media screen and (max-width: ${theme.screenSizes.desktop}px) {
-    padding: 30px 0 0 80px;
+    padding: 30px 50px 0 50px;
   }
   @media screen and (max-width: ${theme.screenSizes.tablet}px) {
-    padding: 50px;
+    padding: 40px;
   }
   @media screen and (max-width: ${theme.screenSizes.phablet}px) {
-    padding: 20px;
+    padding: 10px;
   }
 `;
 

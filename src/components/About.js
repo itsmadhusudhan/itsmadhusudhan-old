@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles";
 import madhu from '../images/madhu.jpg';
+import { spawn } from "child_process";
 
 const AboutContainer = styled.div`
   display: flex;
@@ -87,7 +88,7 @@ class About extends React.Component {
   render() {
     return (
       <AboutContainer id="about">
-      <Heading>About Me</Heading>
+      <Heading>👲 About Me</Heading>
         <Content>
         <TextBlock>
         <Introduction>I have completed my Bachelor's degree in 2017. I have been learning web development 
