@@ -7,7 +7,8 @@ const ExperienceContainer = styled.div`
   display: flex;
   flex-direction: column;
   // padding-right: 150px;
-  padding-bottom: 100px;
+  padding: 10vh 0px 20vh 0;
+  min-height: 100vh;
 `;
 
 const Heading = styled.h3`
@@ -20,6 +21,9 @@ const Heading = styled.h3`
   justify-content: flex-end;
   padding-left: 20px;
   text-align: right;
+  @media screen and (max-width: ${theme.screenSizes.phablet}px) {
+    justify-content: center;
+  }
   &:after,
   &:before {
     content: "";
@@ -33,6 +37,10 @@ const Heading = styled.h3`
     @media screen and (max-width: ${theme.screenSizes.tablet}px) {
       margin-right: 10px;
     }
+    @media screen and (max-width: ${theme.screenSizes.phablet}px) {
+      width: 0;
+      justify-content: flex-start;
+    }
   }
   &:after {
     margin-left: 20px;
@@ -41,8 +49,8 @@ const Heading = styled.h3`
       width: 100px;
       margin-left: 10px;
     }
-    @media screen and (max-width: ${theme.screenSizes.phone}px) {
-      width: 50px;
+    @media screen and (max-width: ${theme.screenSizes.phablet}px) {
+      width: 0;
     }
   }
 `;
@@ -50,11 +58,11 @@ const Heading = styled.h3`
 const Details = styled.div`
   display: flex;
   justify-content: space-around;
-  align-items:flex-start;
-  padding:30px;
+  align-items: flex-start;
+  padding: 30px;
   @media screen and (max-width: ${theme.screenSizes.desktop}px) {
-    flex-direction:column;
-  justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
   }
 `;
 
@@ -74,7 +82,7 @@ const Period = styled.p`
 
 const Content = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-around;
 `;
 
@@ -84,19 +92,27 @@ const Introduction = styled.p`
   max-width: 500px;
   line-height: 25px;
 `;
-
+/* eslint-disable */
 class Experience extends React.Component {
   render() {
     return (
       <ExperienceContainer id="experience">
-        <Heading>💼 Work Experience </Heading>
+        <Heading>
+          <span role="img" arial-label="emoji">
+            💼
+          </span>{" "}
+          Work Experience{" "}
+        </Heading>
         <Details>
           <Content>
             <Designation>Software Engineer</Designation>
             <Company>AtoS Global IT Solutions</Company>
             <Period>July, 2017- Present</Period>
           </Content>
-          <Introduction>Currently working as a fulltime Software Engineer at AtoS, Pune from past One year. </Introduction>
+          <Introduction>
+            Currently working as a fulltime Software Engineer at AtoS, Pune from
+            past One year.{" "}
+          </Introduction>
         </Details>
       </ExperienceContainer>
     );

@@ -12,7 +12,7 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   background: ${theme.colors.white};
   height: 60px;
-  padding: 0 30px;
+  padding: 0 18px;
   box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
   @media screen and (max-width: ${theme.screenSizes.tablet}px) {
     padding: 0 20px;
@@ -54,7 +54,7 @@ const HamburgerBox = styled.div`
 
 const HamburgerLine = styled.div`
   background: ${({ menuOpen }) =>
-    menuOpen ? theme.colors.white: theme.colors.red};
+    menuOpen ? theme.colors.white : theme.colors.red};
   position: absolute;
   top: 50%;
   height: 3px;
@@ -137,11 +137,11 @@ class Header extends React.Component {
     }
   };
 
-  handleClick=(e)=>{
-    if(e.target.href){
+  handleClick = e => {
+    if (e.target.href) {
       this.toggleMenu();
     }
-  }
+  };
 
   render() {
     const { navLinks } = this.props;
@@ -162,15 +162,24 @@ class Header extends React.Component {
           </HamburgerMenu>
           <NavbarLinks>
             <NavBarList>
-              {navLinks.map(({ name, url }, i) => (
+              {navLinks.map(({ icon, name, url }, i) => (
                 <NavBarItem key={i}>
-                  <NavBarLink to={url}>{name}</NavBarLink>
+                  <NavBarLink to={url}>
+                    <span role="img" arial-label="emoji">
+                      {icon}
+                    </span>
+                    {name}
+                  </NavBarLink>
                 </NavBarItem>
               ))}
             </NavBarList>
           </NavbarLinks>
         </NavBar>
-        <Menu menuOpen={menuOpen} navLinks={navLinks} handleClick={this.handleClick}/>
+        <Menu
+          menuOpen={menuOpen}
+          navLinks={navLinks}
+          handleClick={this.handleClick}
+        />
       </HeaderContainer>
     );
   }

@@ -7,7 +7,7 @@ import resume from "../assets/Madhusudhan_resume.pdf";
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 50px 0 100px 0;
 `;
 
@@ -63,6 +63,7 @@ const ResumeLink = styled.a`
   cursor: pointer;
   box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
+  border: 1px solid ${theme.colors.white};
   &:hover {
     background: ${theme.colors.white};
     color: ${theme.colors.navy};

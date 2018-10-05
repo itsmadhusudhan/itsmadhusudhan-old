@@ -7,8 +7,8 @@ import { theme } from "../styles";
 const ProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-right: 150px;
-  padding-bottom: 100px;
+  padding: 5vh 150px 20vh 0;
+  min-height: 100vh;
 `;
 
 const Heading = styled.h3`
@@ -46,12 +46,17 @@ const Heading = styled.h3`
     }
   }
 `;
-
+ /* eslint-disable */
 class Projects extends React.Component {
   render() {
     return (
       <ProjectContainer id="projects">
-        <Heading>💻 Projects</Heading>
+        <Heading>
+          <span role="img" arial-label="emoji">
+            💻
+          </span>
+          Projects
+        </Heading>
       </ProjectContainer>
     );
   }

@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import Head from "./Head";
 import Header from "./Header";
-import { navLinks } from "../../config";
+import Footer from "./Footer";
+import { navLinks,socialLinks } from "../../config";
 
 class Layout extends React.Component {
   static propTypes = {
@@ -38,6 +39,7 @@ class Layout extends React.Component {
               <div>
                 <Header navLinks={navLinks} />
                 {children}
+                <Footer socialLinks={socialLinks} />
               </div>
             )}
           </div>

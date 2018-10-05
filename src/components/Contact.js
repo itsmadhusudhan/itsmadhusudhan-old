@@ -4,11 +4,11 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../styles";
 
-const ProjectContainer = styled.div`
+const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding-right: 150px;
-  padding-bottom: 100px;
+  padding: 20vh 20px 20vh 0;
+  min-height: 100vh;
 `;
 
 const Heading = styled.h3`
@@ -48,36 +48,59 @@ const Heading = styled.h3`
   }
 `;
 
-const Chat=styled.p`
-
-`
-
-const MailLink=styled.a`
-background: ${theme.colors.navy};
-color: ${theme.colors.white};
-text-decoration: none;
-margin-top: 30px;
-width: 120px;
-padding: 10px;
-cursor: pointer;
-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
-text-align: center;
-&:hover {
-  background: ${theme.colors.white};
-  color: ${theme.colors.navy};
-  border: 1px solid ${theme.colors.navy};
-}
+const Touch=styled.h2`
+  font-size:30px;
+  color:${theme.colors.navy};
+  text-align: center;
+  margin-top:50px;
 `;
 
+const Chat = styled.p`
+  padding-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  max-width:600px;
+  margin:0 auto;
+  line-height:25px;
+`;
 
+const MailLink = styled.a`
+  background: ${theme.colors.navy};
+  color: ${theme.colors.white};
+  text-decoration: none;
+  margin-top: 30px;
+  width: 120px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid ${theme.colors.navy};
+  align-self: center;
+  &:hover {
+    background: ${theme.colors.white};
+    color: ${theme.colors.navy};
+    border: 1px solid ${theme.colors.navy};
+  }
+`;
+ /* eslint-disable */
 class Contact extends React.Component {
   render() {
     return (
-      <ProjectContainer id="contact">
-        <Heading>📡 Contact</Heading>
-        <Chat>If you have any queries or job offers you can reach out to me on below email id	📧.</Chat>
+      <ContactContainer id="contact">
+        <Heading>
+        <span role="img" arial-label="emoji">        
+        📡 
+        </span>
+        Contact</Heading>
+        <Touch>Let's Be in Touch!</Touch>
+        <Chat>
+          If you have any queries or job offers you can reach out to me on below
+          email id 📧.
+          You can also contact me if you want me to work with you on any side
+          projects. I just love exploring new ways to do things.
+        </Chat>
         <MailLink href="mailto:madhusudhan1863@gmail.com">Mail Me</MailLink>
-      </ProjectContainer>
+      </ContactContainer>
     );
   }
 }

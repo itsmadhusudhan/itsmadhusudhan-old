@@ -8,8 +8,8 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction:column;
   font-family: Cabin;
-  padding-right:150px;
-  padding-bottom:100px;
+  padding: 5vh 150px 20vh 0;
+  min-height:100vh;
   @media screen and (max-width: ${theme.screenSizes.tablet}px) {
     padding-right:0;
   }
@@ -22,8 +22,10 @@ const Heading = styled.h3`
   display: flex;
   align-items: center;
   width: 100%;
-  // justify-content:center;
   padding-left: 20px;
+  @media screen and (max-width: ${theme.screenSizes.phablet}px) {
+    justify-content: center;
+  }
   &:after,
   &:before {
     content: "";
@@ -37,6 +39,9 @@ const Heading = styled.h3`
     @media screen and (max-width: ${theme.screenSizes.tablet}px) {
       margin-right: 10px;
     }
+    @media screen and (max-width: ${theme.screenSizes.phablet}px) {
+      width: 0;
+    }
   }
   &:after {
     margin-left: 20px;
@@ -45,8 +50,8 @@ const Heading = styled.h3`
       width: 100px;
       margin-left: 10px;
     }
-    @media screen and (max-width: ${theme.screenSizes.phone}px) {
-      width: 50px;
+    @media screen and (max-width: ${theme.screenSizes.phablet}px) {
+      width: 0;
     }
   }
 `;
@@ -54,7 +59,7 @@ const Heading = styled.h3`
 const Content=styled.div`
   display:flex;
   justify-content:space-around;
-  padding-top:20px;
+  padding-top:30px;
   @media screen and (max-width: ${theme.screenSizes.phablet}px) {
     flex-direction:column-reverse;
     align-items:center;
@@ -82,12 +87,13 @@ const Introduction = styled.p`
     order:2;
   }
 `;
-
+ /* eslint-disable */
 class About extends React.Component {
   render() {
     return (
       <AboutContainer id="about">
-      <Heading>👲 About Me</Heading>
+      <Heading>
+      <span role="img" arial-label="emoji">👲</span> About Me</Heading>
         <Content>
         <TextBlock>
         <Introduction>I have completed my Bachelor's degree in 2017. I have been learning web development 

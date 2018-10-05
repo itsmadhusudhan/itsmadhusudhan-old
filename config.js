@@ -5,20 +5,34 @@ module.exports={
   description:'Personal portfolio site',
   navLinks:[
     {
-      name:'👲 About',
+      icon:'👲',
+      name:' About',
       url:'#about'
     },
     {
-      name:'💼 Experience',
+      icon:'💼',
+      name:' Experience',
       url:'#experience'
     },
     {
-      name:'💻 Projects',
+      icon:'💻',
+      name:' Projects',
       url:'#projects'
     },
     {
-      name:'📡 Contact',
+      icon:'📡',
+      name:' Contact',
       url:'#contact'
+    }
+  ],
+  socialLinks:[
+    {
+      name:'Twitter',
+      url:'https://twitter/itsmadhusudhan'
+    },
+    {
+      name:'Github',
+      url:'https://github.com/itsmadhusudhan'
     }
   ]
 }

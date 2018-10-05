@@ -1,13 +1,13 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
+import styled, { injectGlobal } from "styled-components";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Experience from "../components/Experience";
+import Hero from "../components/Hero";
 // import { grapgql } from "gatsby";
 import Layout from "../components/Layout";
-import styled, { injectGlobal } from "styled-components";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Experience from "../components/Experience";
 import Projects from "../components/Projects";
-import Contact from "../components/Contact";
 import { theme } from "../styles";
 
 injectGlobal`
