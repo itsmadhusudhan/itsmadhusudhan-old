@@ -53,6 +53,10 @@ const WebLink = styled.a`
   text-decoration: none;
 `;
 
+const Button=styled.a`
+
+`
+
 const ResumeLink = styled.a`
   background: ${theme.colors.navy};
   color: ${theme.colors.white};
@@ -76,15 +80,15 @@ class Hero extends React.Component {
     isMounted: false
   };
 
-  componentDidMount() {
-    setTimeout(() => this.setState({ isMounted: true }), 500);
-  }
+  // componentDidMount() {
+  //   setTimeout(() => this.setState({ isMounted: true }), 500);
+  // }
 
   render() {
-    const { isMounted } = this.state;
+    // const { isMounted } = this.state;
     return (
       <HeroContainer>
-        {isMounted && (
+        {
           <Fragment>
             <Hello>Hello, I'm </Hello>
             <Name>Madhusudhan.</Name>
@@ -104,7 +108,7 @@ class Hero extends React.Component {
               Get Resume
             </ResumeLink>
           </Fragment>
-        )}
+        }
       </HeroContainer>
     );
   }

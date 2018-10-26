@@ -23,7 +23,8 @@ module.exports={
       icon:'📡',
       name:' Contact',
       url:'#contact'
-    }
+    },
+    
   ],
   socialLinks:[
     {

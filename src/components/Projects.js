@@ -3,8 +3,9 @@ import React from "react";
 // import PropTypes from "prop-types";
 import styled from "styled-components";
 import { theme } from "../styles";
+import Project from "./Project";
 
-const ProjectContainer = styled.div`
+const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 5vh 150px 20vh 0;
@@ -46,18 +47,28 @@ const Heading = styled.h3`
     }
   }
 `;
- /* eslint-disable */
+
+const Container = styled.div``;
+
+/* eslint-disable */
 class Projects extends React.Component {
   render() {
     return (
-      <ProjectContainer id="projects">
+      <ProjectsContainer id="projects">
         <Heading>
           <span role="img" arial-label="emoji">
             💻
           </span>
           Projects
         </Heading>
-      </ProjectContainer>
+        <Container>
+          <Project
+            heading="Rest Api with firebase"
+            body="I have built a Rest Api that gives the details of screens in movie theatres"
+          />
+          <Project heading="Blog with gatsby" body="Designed and developed the blog Coding Titan using Gatsby a static site generator"/>
+        </Container>
+      </ProjectsContainer>
     );
   }
 }
